@@ -64,12 +64,26 @@
         </p>
         <h1>Examples</h1>
         <h3>Products</h3>
-            <img src="https://www.techsoupcanada.ca/sites/default/files/images/adobe_creative_suite_family_software_logo_vector_267503.jpg" height="150" width="150">
-
-            <center><img src="https://cdn.freebiesupply.com/logos/large/2x/lego-logo-svg-vector.svg" height="150" width="150"> </center>
-
+        <div class="row">
+            <div class="column">
+                <img src="https://www.techsoupcanada.ca/sites/default/files/images/adobe_creative_suite_family_software_logo_vector_267503.jpg">
+            </div>
+        </div>
         
-        </style>
+        <div class="column">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/lego-logo-svg-vector.svg"> 
+        </div>
+        <style type="text/css">
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear:both;
+            }
     </article>
 </body>
 </html>
